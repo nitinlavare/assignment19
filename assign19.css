@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Signika:wght@300..700&display=swap');
+
+  .signika {
+    font-family: "Signika", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "GRAD" 0;
+  }
+  
+body{
+   background-color: #fafafaa9;
+   margin: 0;
+   position: relative;
+}
+
+.main-body{
+  height: 750px;
+  
+}
+
+.title{
+  text-align: center;
+  font-size: 20px;
+  font-size: 40px;
+}
+
+.body-items{
+  display: flex;
+  justify-content: center;
+}
+
+.body-items-card{
+  margin: 20px;
+  height: 450px;
+  width: 350px;
+  border-radius: 10px;
+  background-position: center;
+  text-decoration: none;
+  background-size:cover;
+}
+
+.body-items-card:hover{
+  box-shadow: 0 0 10px 5px #3ccafc;
+  background-size: contain;
+}
+.sweets{
+  background-image: url("./../images/cake-card-img.jpg");
+}
+
+.burger{
+  background-image: url("./../images/burger-card-img.jpg");
+}
+
+.drinks{
+  background-image: url("./../images/drinks-card-img.jpg");
+}
+
+.pizza{
+  background-image: url("./../images/pizza-card-img.jpg");
+}
+
+.body-card-text{
+  text-align: center;
+  font-size: 50px;
+  color: #fff;  
+}
+
+ /* Small Devices  */
+ @media screen and (max-width: 600px) 
+  { 
+    .body{
+      position: relative;
+      
+    }
+  
+  .main-body{
+    height: 50%
+  }
+  .body-items{
+  display: flex;
+  flex-wrap: wrap;
+  }
+  
+  .body-items-card{
+  margin: 20px;
+  height: 400px;
+  width: 300px;
+  border-radius: 10px;
+  background-position: center;
+  text-decoration: none;
+  }
+}
+
+/* Normal Devices  */
+@media screen and (min-width: 601px) and (max-width: 768px) 
+{ 
+  body{
+  position: relative;
+  
+}
+
+.main-body{
+  height: 50%
+}
+.body-items{
+display: flex;
+flex-wrap: wrap;
+}
+
+.body-items-card{
+margin: 20px;
+height: 400px;
+width: 300px;
+border-radius: 10px;
+background-position: center;
+text-decoration: none;
+}
+}
+
+/* Tablets Devices  */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .body{
+    position: relative;
+    
+  }
+
+.main-body{
+  height: 850px;
+}
+.body-items{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.body-items-card{
+  margin: 30px;
+  height: 400px;
+  width: 300px;
+  border-radius: 10px;
+  background-position: center;
+  text-decoration: none;
+}
+}
+
+/* Large Devices  */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .body{
+    position: relative;
+  }
+.body-items{
+  display: flex;
+  justify-content: space-around;
+}
+
+.body-items-card{
+  margin: 30px;
+  height: 400px;
+  width: 300px;
+  border-radius: 10px;
+  background-position: center;
+  text-decoration: none;
+}
+}
+@media screen and (min-width: 1201px) and (max-width: 1700px){
+  .body{
+    position: relative;
+  }
+.body-items{
+  display: flex;
+  justify-content: space-around;
+}
+.body-items-card{
+  margin: 20px;
+  height: 400px;
+  width: 300px;
+  border-radius: 10px;
+  background-position: center;
+  text-decoration: none;
+}
+}
